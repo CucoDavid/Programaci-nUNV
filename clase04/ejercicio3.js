@@ -1,0 +1,14 @@
+import promptSync from "prompt-sync";
+const prompt = promptSync();
+const cliente = prompt("Ingrese el nombre del cliente:");
+const producto = prompt("Ingrese el nombre del producto:");
+const cantidad = Number(prompt("Ingrese la cantidad que consumiste:"));
+const precio = Number(prompt("Ingrese el precio del producto:"));
+const total = cantidad * precio;
+console.log(`================================================================`);
+console.log(`Gracias por su compra ${cliente}`);
+console.log(`Producto: ${producto}`);
+console.log(`Cantidad consumida: ${cantidad}`);
+console.log(`Precio unitario: $${precio}`);
+console.log(`Total a pagar: $${total}`);
+console.log(`================================================================`);

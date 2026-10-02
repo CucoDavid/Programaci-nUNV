@@ -1,0 +1,16 @@
+Ejercicio 6: Argumentación técnica sobre seguridad de tipos   Consigna: Redactar un breve documento de 
+justificación técnica sobre el uso de genéricos frente a any.   Documento de Justificación Técnica: Genéricos <T> vs 
+anyPara: Equipo de Desarrollo / Revisión de Código (Code Review)   Asunto: Importancia de la Seguridad de Tipos con 
+Genéricos en TypeScriptEl uso de any en lugar de genéricos (<T>) degrada las principales ventajas de usar TypeScript 
+por las siguientes razones:   Pérdida de Seguridad de Tipos (Type Safety):   Cuando usamos any, le pedimos a TypeScript
+ que "apague" el verificador de tipos. Esto permite que se pasen tipos incorrectos a métodos o funciones sin lanzar ningún 
+ aviso, lo que causa errores fatales en tiempo de ejecución (runtime errors) que el cliente final experimentará.   Anulación
+  del Autocompletado e Inteligencia del Editor (IntelliSense):   Al retornar any, el editor de código no sabe qué propiedades
+   o métodos tiene la variable. Con los genéricos, el IDE sabe exactamente el tipo de dato que se está manipulando, lo que permite 
+   el autocompletado y acelera el desarrollo.   Detección Temprana de Errores (Tiempo de Compilación):   Los genéricos capturan los 
+   errores mientras escribimos el código. Si intentamos usar un método de números (como .toFixed()) en una cadena de texto (string), 
+   el genérico mostrará un error en rojo inmediatamente, mientras que any lo ignorará hasta que la aplicación falle.   
+
+   Conclusión:Aunque any requiere menos código al escribir, incrementa drásticamente la probabilidad de fallos e invalida el
+    propósito de usar TypeScript. Los genéricos <T> brindan flexibilidad para trabajar con múltiples 
+tipos de datos manteniendo la máxima seguridad y calidad de software.   

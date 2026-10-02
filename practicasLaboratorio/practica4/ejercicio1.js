@@ -25,3 +25,23 @@ function cambiarTexto(texto, palabraBuscar, palabraNueva) {
     }
     return texto;
 }
+//ejercicio5
+function contarPalabras(texto, primera, segunda) {
+    return texto.startsWith(primera) ? texto.endsWith(segunda) ? true : false : false;
+}
+let texto = "hola mundo";
+let palabra1 = "mundo";
+let palabra2 = " hola";
+console.log(contarPalabras(texto, palabra1, palabra2));
+//ejercicio6
+function promedioN(n1, n2, n3) {
+    return (n1 + n2 + n3) / 3;
+}
+function aprobado(promedio) {
+    return promedio >= 7 ? "Aprobado" : "Reprobado";
+}
+let n1 = 5;
+let n2 = 10;
+let n3 = 15;
+let promedio = promedioN(n1, n2, n3);
+console.log(aprobado(promedio));

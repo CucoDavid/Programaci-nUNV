@@ -17,5 +17,12 @@
   "bugs": {
     "url": "https://github.com/CucoDavid/univopracticas/issues"
   },
-  "homepage": "https://github.com/CucoDavid/univopracticas#readme"
+  "homepage": "https://github.com/CucoDavid/univopracticas#readme",
+  "devDependencies": {
+    "@types/prompt-sync": "^4.2.3",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
 }
